@@ -52,9 +52,9 @@ It uses **NLP techniques (CountVectorizer + Cosine Similarity)** to process movi
 
 ```mermaid
 graph LR
-A[TMDB Dataset] --> B[Data Cleaning & Preprocessing]
-B --> C[Tag Creation (Genres + Cast + Crew + Keywords)]
-C --> D[Vectorization via CountVectorizer]
-D --> E[Cosine Similarity Matrix]
-E --> F[Recommendation Logic]
-F --> G[Top 5 Similar Movies]
+  A[TMDB Dataset] --> B[Data Cleaning and Preprocessing]
+  B --> C[Tag Creation: Genres + Cast + Crew + Keywords]
+  C --> D[Vectorization via CountVectorizer]
+  D --> E[Cosine Similarity Matrix]
+  E --> F[Recommendation Logic]
+  F --> G[Top 5 Similar Movies]
