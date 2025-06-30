@@ -6,7 +6,6 @@ A content-based movie recommendation app that suggests similar movies using natu
 
 
 🔍 Recommends movies based on a selected movie
-
 🧠 NLP-based vectorization (CountVectorizer)
 
 💬 Cleaned and combined TMDB data (genres, keywords, cast, crew)
