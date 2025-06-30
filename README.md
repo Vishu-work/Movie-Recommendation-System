@@ -2,10 +2,15 @@
 🎬 Movie Recommendation System using TMDB & Streamlit
 A content-based movie recommendation app that suggests similar movies using natural language processing (NLP) techniques like CountVectorizer. Built with Streamlit for an interactive user interface and includes robust exception handling.
 
+
+
 📌 Features
 
 
+
+
 🔍 Recommends movies based on a selected movie
+
 🧠 NLP-based vectorization (CountVectorizer)
 
 💬 Cleaned and combined TMDB data (genres, keywords, cast, crew)
@@ -17,7 +22,11 @@ A content-based movie recommendation app that suggests similar movies using natu
 🌐 Deployed with Streamlit for simple, shareable web UI
 
 
+
+
 🧠 How It Works
+
+
 
 
 Data Preprocessing: TMDB movie metadata is cleaned and features are merged into a single text column.
@@ -31,7 +40,11 @@ Recommendation: Top 5 similar movies are returned based on user selection.
 Streamlit Interface: Simple dropdown and button-based UI for input/output.
 
 
+
+
 🖥️ Example UI
+
+
 
 
 Input: Select a movie from a dropdown.
