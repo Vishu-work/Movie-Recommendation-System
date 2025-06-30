@@ -1,5 +1,6 @@
 # Movie-Recommendation-System
 🎬 Movie Recommendation System using TMDB & Streamlit
+
 A content-based movie recommendation app that suggests similar movies using natural language processing (NLP) techniques like CountVectorizer. Built with Streamlit for an interactive user interface and includes robust exception handling.
 
 
