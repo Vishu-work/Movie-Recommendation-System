@@ -1,58 +1,60 @@
-# Movie-Recommendation-System
-🎬 Movie Recommendation System using TMDB & Streamlit
+# 🎬 Movie Recommendation System using TMDB & Streamlit
 
-A content-based movie recommendation app that suggests similar movies using natural language processing (NLP) techniques like CountVectorizer. Built with Streamlit for an interactive user interface and includes robust exception handling.
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![NLP](https://img.shields.io/badge/NLP-CountVectorizer-orange)
+![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-red)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
+> 🎥 Get personalized movie recommendations using content-based filtering and NLP techniques — all within a clean, interactive Streamlit UI!
 
+---
 
-📌 Features
+## 🗂️ Table of Contents
 
+- [📖 Overview](#-overview)
+- [📦 Features](#-features)
+- [🧠 How It Works](#-how-it-works)
+- [🖥️ Streamlit Interface](#️-streamlit-interface)
+- [🚀 Getting Started](#-getting-started)
+- [📊 Dataset Info](#-dataset-info)
+- [📸 Sample UI](#-sample-ui)
+- [🔮 Future Enhancements](#-future-enhancements)
+- [🙌 Acknowledgements](#-acknowledgements)
+- [📬 Contact](#-contact)
 
+---
 
+## 📖 Overview
 
-🔍 Recommends movies based on a selected movie
+This is a **content-based movie recommendation system** that suggests similar movies based on your selection.  
+It uses **NLP techniques (CountVectorizer + Cosine Similarity)** to process movie metadata (genre, cast, crew, keywords, etc.) and recommends top 5 similar titles.
 
-🧠 NLP-based vectorization (CountVectorizer)
+🧠 Built using:
+- Python
+- Pandas, scikit-learn
+- Streamlit (for deployment)
+- TMDB dataset
 
-💬 Cleaned and combined TMDB data (genres, keywords, cast, crew)
+---
 
-✅ Cosine similarity computation for recommendations
+## 📦 Features
 
-⚙️ Exception handling for missing/invalid inputs
+✅ Recommends 5 similar movies based on selected title  
+✅ Uses **CountVectorizer** to convert text to feature vectors  
+✅ Computes **Cosine Similarity** between movie vectors  
+✅ Handles missing posters or bad inputs gracefully  
+✅ Interactive **Streamlit-based** web UI  
+✅ Cleaned TMDB data: genres, cast, crew, keywords merged into one tag  
 
-🌐 Deployed with Streamlit for simple, shareable web UI
+---
 
+## 🧠 How It Works
 
-
-
-🧠 How It Works
-
-
-
-
-Data Preprocessing: TMDB movie metadata is cleaned and features are merged into a single text column.
-
-Vectorization: CountVectorizer transforms movie metadata into feature vectors.
-
-Similarity: Cosine similarity is calculated between movie vectors.
-
-Recommendation: Top 5 similar movies are returned based on user selection.
-
-Streamlit Interface: Simple dropdown and button-based UI for input/output.
-
-
-
-
-🖥️ Example UI
-
-
-
-
-Input: Select a movie from a dropdown.
-
-Output: List of 5 recommended movies.
-
-Error Handling: Graceful fallback if the selected movie poster isn't found in the dataset.
-
-
-
+```mermaid
+graph LR
+A[TMDB Dataset] --> B[Data Cleaning & Preprocessing]
+B --> C[Tag Creation (Genres + Cast + Crew + Keywords)]
+C --> D[Vectorization via CountVectorizer]
+D --> E[Cosine Similarity Matrix]
+E --> F[Recommendation Logic]
+F --> G[Top 5 Similar Movies]
